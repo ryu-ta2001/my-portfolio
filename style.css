@@ -1,0 +1,47 @@
+.site-header {
+  position: relative;
+}
+
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+@media (max-width: 629px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+@media (min-width: 630px) {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #fff;
+  background-color: #2fa0f6;
+  min-width: 120px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 629px) {
+  .button {
+    margin-right: 2.5rem;
+  }
+}
