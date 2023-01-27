@@ -12,26 +12,93 @@
     <header class="site-header">
       <div class="site-header__wrapper">
         <div class="site-header__start">
-          <h2>Ryuta Aoyagi</h2>
+          <a href="#" class="my-name">Ryuta Aoyagi</a>
         </div>
         <div class="site-header__middle">
           <nav class="nav">
-            <button class="nav__toggle" aria-expanded="false" type="button">
-              ≡
-            </button>
-            <ul class="nav__wrapper">
-              <li class="nav__item"><a href="#">Profile</a></li>
-              <li class="nav__item"><a href="#">Skill</a></li>
-              <li class="nav__item"><a href="#">Product</a></li>
-              <li class="nav__item"><a href="#">Contact</a></li>
+            <ul id="nav__wrapper" class="nav__wrapper">
+              <li class="nav__item"><a href="#profile">Profile</a></li>
+              <li class="nav__item"><a href="#skill">Skill</a></li>
+              <li class="nav__item"><a href="#product">Product</a></li>
+              <li class="nav__item"><a href="#quiz">Quiz</a></li>
+              <li class="nav__item"><a href="#link">Link</a></li>
             </ul>
           </nav>
         </div>
-        <div class="site-header__end">
-          <a class="button" href="#">Sign in</a>
-        </div>
       </div>
     </header>
+
+    <main>
+      <div class="content">
+        <div id="profile">
+          <h1 class="section-title">Profile</h1>
+          <div class="prof-container">
+            <div class="prof-image">
+              <img src="img/my_picture.jpg" alt="自画像" />
+            </div>
+            <div class="prof-text-container">
+              <div class="prof-text">
+                <p class="name">青柳龍太(Ryuta Aoyagi)</p>
+                <p>生年月日: 2001年10月27日生まれ</p>
+                <p>出身: 東京都</p>
+                <p>大学: 北海道大学工学部情報エレクトロニクス学科</p>
+                <p>高校: 國學院大學久我山高等学校</p>
+                <p>趣味: サッカー観戦, スポーツ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="skill">
+          <h1 class="section-title">Skill</h1>
+          <div class="skills-container">
+            <div class="skill-tab">
+              <img src="img/cpp-logo.png" alt="C++" />
+            </div>
+            <div class="skill-tab">
+              <img src="img/Python-logo.png" alt="Python" />
+            </div>
+            <div class="skill-tab">
+              <img src="img/JavaScript-logo.png" alt="JavaScript" />
+            </div>
+            <div class="skill-text"></div>
+          </div>
+        </div>
+
+        <div id="product">
+          <h1 class="section-title">Product</h1>
+          <div class="content-container">
+            <div class="prod-container">
+              <div class="prod-tab"></div>
+              <div class="prod-text">今後作品を追加していきます。</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="quiz">
+          <h1 class="section-title">Quiz</h1>
+          <div class="content-container"></div>
+        </div>
+
+        <div id="link">
+          <h1 class="section-title">Link</h1>
+          <div class="links-container">
+            <div class="link-tab">
+              <a href="https://www.instagram.com/ryuta_ao">
+                <img src="img/Instagram-logo.png" alt="Instagram" />
+              </a>
+            </div>
+            <div class="link-tab">
+              <a href="https://github.com/ryu-ta2001">
+                <img src="img/github-logo.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
 
     <script src="main.js"></script>
   </body>

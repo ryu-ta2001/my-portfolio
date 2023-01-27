@@ -1,47 +1,130 @@
+a {
+  text-decoration: none;
+}
+/* headerここから */
+.my-name {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
 .site-header {
   position: relative;
+  background-color: #333333;
 }
 
 .site-header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* .site-header__middle {
+  margin-left: auto;
+} */
+.nav__wrapper {
+  display: flex;
+}
+
+li.nav__item {
+  list-style-type: none;
+}
+.nav__item a {
+  display: block;
   padding: 1rem;
+  color: white;
+}
+/* headerここまで */
+
+/* main全体 */
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.nav__toggle {
-  display: none;
+/* section-titleここから */
+.section-title {
+  margin: 0; /* デフォルトCSS打ち消し */
+  font-size: 24px; /* 文字サイズ指定 */
+  border-bottom: solid 3px; /* 線指定 */
+  padding: 5px; /* 余白指定 */
+  margin-bottom: 15px; /* 周りの余白指定 */
+  position: relative; /* 位置調整 */
+  font-weight: bold; /* 文字の太さ調整 */
 }
-
-@media (max-width: 629px) {
-  .nav__toggle {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
+.section-title:before {
+  content: ""; /* 空白の要素を作る */
+  width: 50px; /* 幅指定 */
+  height: 3px; /* 高さ指定 */
+  background-color: #42a6ff; /* 背景色指定 */
+  display: block; /* ブロック要素にする */
+  position: absolute; /* 位置調整 */
+  left: 0; /* 位置調整 */
+  bottom: -3px; /* 位置調整 */
 }
+/* section-titleここまで */
 
-@media (min-width: 630px) {
-  .nav__wrapper {
-    display: flex;
-  }
+/* profileここから */
+.prof-container {
+  display: flex;
+  justify-content: space-around;
 }
-
-.button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #fff;
-  background-color: #2fa0f6;
-  min-width: 120px;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+.prof-image {
+  width: 30%;
+  margin: 0;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
+.prof-image img {
+  width: 100%;
+  padding: auto;
+  border-radius: 30%;
+  border: solid 3px #42a6ff;
+}
+.prof-text-container {
+  display: flex;
+  align-items: center;
+}
+.prof-text {
+  line-height: 3;
+  text-align: start;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* profileここまで */
 
-@media (max-width: 629px) {
-  .button {
-    margin-right: 2.5rem;
-  }
+/* skillここから*/
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skill-tab {
+  display: inline-block;
+  height: 180px;
+}
+.skill-tab img {
+  height: 100%;
+}
+/* skillここまで */
+
+/* linkここから */
+.links-container {
+  display: flex;
+  justify-content: start;
+}
+.link-tab {
+  display: inline-block;
+  height: 150px;
+  margin-left: 40px;
+}
+.link-tab a img {
+  height: 100%;
+  border-radius: 40%;
+  padding: 10px;
+  border: solid 5px #42a6ff;
 }
