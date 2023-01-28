@@ -1,9 +1,9 @@
 body {
-  background-color: #bfbcbc;
+  background-color: #bfbcbc; /* 全体の背景色指定 */
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /* 下線消す */
 }
 /* headerここから */
 .my-name {
@@ -12,7 +12,7 @@ a {
   color: white;
 }
 .site-header {
-  position: relative;
+  /* position: relative; */
   background-color: #333333;
 }
 
@@ -116,7 +116,7 @@ li.nav__item {
 .skill-tab {
   display: inline-block;
   height: 180px;
-  padding: 5%;
+  padding: 3%;
   border-radius: 30%;
 }
 .button-lighting {
