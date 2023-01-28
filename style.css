@@ -116,13 +116,19 @@ li.nav__item {
 .skill-tab {
   display: inline-block;
   height: 180px;
+  padding: 5%;
+  border-radius: 30%;
 }
+.button-lighting {
+  background-color: white;
+}
+
 .skill-tab img {
   height: 100%;
 }
 
 #skill-detail {
-  background-color: #d6d6d6;
+  background-color: white;
   height: fit-content;
   border-radius: 5%;
   padding: 5%;
