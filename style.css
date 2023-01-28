@@ -1,3 +1,7 @@
+body {
+  background-color: #bfbcbc;
+}
+
 a {
   text-decoration: none;
 }
@@ -42,6 +46,7 @@ li.nav__item {
 .content {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 15px;
 }
 
 /* section-titleここから */
@@ -70,6 +75,8 @@ li.nav__item {
 .prof-container {
   display: flex;
   justify-content: space-around;
+  background-color: #d6d6d6;
+  border-radius: 5%;
 }
 .prof-image {
   width: 30%;
@@ -102,6 +109,9 @@ li.nav__item {
 .skills-container {
   display: flex;
   justify-content: space-evenly;
+  background-color: #d6d6d6;
+  border-radius: 5%;
+  padding: 5%;
 }
 .skill-tab {
   display: inline-block;
@@ -110,12 +120,37 @@ li.nav__item {
 .skill-tab img {
   height: 100%;
 }
+
+#skill-detail {
+  background-color: #d6d6d6;
+  height: fit-content;
+  border-radius: 5%;
+  padding: 5%;
+}
+.hidden {
+  display: none;
+}
+
+#skill-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 /* skillここまで */
+
+/* productここから */
+.prod-container {
+  background-color: #d6d6d6;
+  border-radius: 5%;
+}
+/* productここまで */
 
 /* linkここから */
 .links-container {
   display: flex;
   justify-content: start;
+  background-color: #d6d6d6;
+  padding: 5%;
+  border-radius: 5%;
 }
 .link-tab {
   display: inline-block;
