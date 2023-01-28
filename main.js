@@ -63,7 +63,7 @@ const skillButton = function (num) {
   skillText.textContent = skills[num].text;
 };
 cpp.onclick = function () {
-  console.log(buttonBefore);
+  // console.log(buttonBefore);
   buttonBefore = buttonOnOff(0);
   skillLighting(buttonBefore);
   skillButton(0);
